@@ -3,9 +3,9 @@ import { motion, useMotionValue, useSpring } from 'framer-motion';
 
 const services = [
   { name: 'UI/UX Design', icon: '✨' },
-  { name: 'App Design', icon: '📱' },
+  { name: 'Content Strategy', icon: '📱' },
   { name: 'Web Design', icon: '💻' },
-  { name: 'Framer Developement', icon: '⚡' },
+  { name: 'Social Media Campaign', icon: '⚡' },
   { name: 'Branding', icon: '🎨' },
 ];
 
@@ -16,7 +16,7 @@ const Services = () => {
   // Motion values for custom cursor coordinates
   const cursorX = useMotionValue(-100);
   const cursorY = useMotionValue(-100);
-  
+
   // Smooth spring physics for the cursor following
   const springConfig = { damping: 25, stiffness: 400, mass: 0.5 };
   const cursorXSpring = useSpring(cursorX, springConfig);
@@ -35,9 +35,9 @@ const Services = () => {
   }, [cursorX, cursorY]);
 
   return (
-    <section 
+    <section
       id="services"
-      ref={containerRef} 
+      ref={containerRef}
       className={`w-full bg-white dark:bg-[#0A0A0A] flex flex-col items-center justify-center pt-16 pb-24 px-6 lg:px-[40px] relative transition-colors duration-500 ${activeService ? 'cursor-none' : ''}`}
     >
       <div className="w-full">

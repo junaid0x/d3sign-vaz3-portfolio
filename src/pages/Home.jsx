@@ -6,6 +6,7 @@ import Projects from '../components/Projects';
 import Team from '../components/Team';
 import Form from '../components/Form';
 import Footer from '../components/Footer';
+import Stats from '../components/Stats';
 
 const Home = () => {
   const footerRef = useRef(null);
@@ -38,6 +39,7 @@ const Home = () => {
       >
         <Navbar />
         <Hero />
+        <Stats />
         <Services />
         <Projects />
         <Team />

@@ -42,11 +42,11 @@ const Hero = () => {
         {/* Main Heading */}
         <motion.h1
           variants={itemVariants}
-          className="text-[12vw] sm:text-[10vw] md:text-[9vw] lg:text-[140px] leading-[0.9] font-medium tracking-tighter text-center text-[#111111] dark:text-white transition-colors duration-500"
+          className="text-[6.5vw] sm:text-[5vw] md:text-[4vw] lg:text-[60px] xl:text-[75px] leading-[1.1] font-medium tracking-tight text-center text-[#111111] dark:text-white transition-colors duration-500 mb-10 w-full"
         >
-          Let's turn your ideas
-          <br className="hidden md:block" />
-          <span className="md:ml-12 lg:ml-24">into impactful</span> performance-driven design
+          <span className="whitespace-nowrap">We engineer elite visual systems at</span>
+          <br className="block" />
+          <span className="whitespace-nowrap">the speed of intelligence.</span>
         </motion.h1>
 
         {/* CTA Button */}
